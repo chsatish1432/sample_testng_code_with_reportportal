@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 
 
-public class cookie_scanner extends testBase{
+public class cookie_scanner{
 
 	
 	
