@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<!-- command  -->
+<!--mvn clean test -DcookiebotURL="" -Dusername="" -Dpassword="" -DscanURL="https://portal.accenture.com" -DsuiteXmlFile=testng.xml  -->
+<suite name="Cookiebot-scan">
+    
+    <listeners>
+		<listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />		
+    </listeners>
+    
+  <test name="ChromeTest">
+
+  <parameter name="browserType" value="chrome"/>
+  
+    <classes>
+          <class name="cookie_scan.cookie_scanner"/>
+    </classes>
+  </test> 
+ 
+ </suite> 
+ 
+ 
+ 
+ 
+ 
+ 
+
